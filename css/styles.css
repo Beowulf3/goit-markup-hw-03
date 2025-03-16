@@ -22,14 +22,12 @@ body {
 
 .container {
     max-width: 1440px;
+    width: 1158px;
     display: flex;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-}
-.container:not(.hero-container) {
-    padding-left: 156px;
-    padding-right: 156px;
 }
 
 /* ------------------------Header------------------------------- */
@@ -85,10 +83,6 @@ ul .link:hover, .link:focus {
 .logo {
     color: #2e2f42;
 }
-.studio:active {
-    color: #4d5ae5;
-    text-decoration: underline;
-}
 .page-nav ul {
     font-weight: 500;
 }
@@ -103,6 +97,7 @@ ul .link:hover, .link:focus {
 
 .hero {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 .hero-container {
     display: flex;
@@ -117,7 +112,6 @@ ul .link:hover, .link:focus {
     letter-spacing: 0.02em;
     color: #fff;
     text-align: center;
-    margin-top: 68px;
     margin-bottom: 24px;
     max-width: 496px;
 }
@@ -131,7 +125,8 @@ ul .link:hover, .link:focus {
     width: 169px;
     height: 56px;
     margin-top: 24px;
-    margin-bottom: 68px;
+    min-width: 169px;
+    border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -141,7 +136,19 @@ ul .link:hover, .link:focus {
 
 /* ---------------------------Features------------------------- */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .features-list {
     display: flex;
     gap: 24px;
@@ -165,6 +172,8 @@ ul .link:hover, .link:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
 }
 .desc {
     line-height: 1.5;
@@ -196,8 +205,8 @@ ul .link:hover, .link:focus {
     flex-direction: row;
     gap: 24px;
 }
-.team-list img {
-    margin-bottom: 24px;
+.card-desc {
+    padding: 32px 0;
 }
 .card {
     background-color: #fff;
@@ -207,12 +216,12 @@ ul .link:hover, .link:focus {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    padding-bottom: 32px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .job {
     line-height: 1.5;
+    text-align: center;
 }
 
 /* -------------------------------Portgolio------------------ */
@@ -237,9 +246,12 @@ ul .link:hover, .link:focus {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border-width: 0px 1px 1px 1px;
-    border-style: solid;
-    border-color: #E7E9FC;
+}
+.app-desc {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    width: 100%;
 }
 .portfolio-title {
     font-size: 36px;
@@ -257,11 +269,10 @@ ul .link:hover, .link:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin: 32px 0 8px 16px;
+    margin-bottom: 8px;
 }
 .project {
     line-height: 1.5;
-    margin: 0 0 32px 16px;
 }
 
 /* ---------------------------Footer------------------------ */
@@ -279,7 +290,8 @@ ul .link:hover, .link:focus {
     align-items: flex-start;
 }
 .footer-container a {
-    padding-bottom: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer-logo {
     color: #f4f4fd;
