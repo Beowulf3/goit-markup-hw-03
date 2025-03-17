@@ -21,13 +21,10 @@ body {
 }
 
 .container {
-    max-width: 1440px;
     width: 1158px;
-    display: flex;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
 }
 
 /* ------------------------Header------------------------------- */
@@ -46,6 +43,7 @@ section {
     line-height: 1.5;  
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
 }
 .nav-list {
     gap: 40px;
@@ -98,13 +96,9 @@ ul .link:hover, .link:focus {
 .hero {
     background-color: #2e2f42;
     padding: 188px 0;
+    text-align: center;
 }
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .page-title {
     font-weight: 700;
     font-size: 56px;
@@ -112,8 +106,10 @@ ul .link:hover, .link:focus {
     letter-spacing: 0.02em;
     color: #fff;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
     max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .order-btn {
     background-color: #4d5ae5;
@@ -124,7 +120,6 @@ ul .link:hover, .link:focus {
     font-weight: 500;
     width: 169px;
     height: 56px;
-    margin-top: 24px;
     min-width: 169px;
     border: none;
     border-radius: 4px;
@@ -155,10 +150,7 @@ ul .link:hover, .link:focus {
 }
 .feature {
     width: calc((100% - 72px) / 4);
-    display: flex;
     gap: 8px;
-    flex-direction: column;
-    align-items: flex-start;
 }
 .features-title {
     font-size: 36px;
@@ -173,7 +165,6 @@ ul .link:hover, .link:focus {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    text-align: center;
 }
 .desc {
     line-height: 1.5;
@@ -184,12 +175,7 @@ ul .link:hover, .link:focus {
 .team {
     background-color: #f4f4fd;
 }
-.team-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .team-title {
     font-size: 36px;
     font-weight: 700;
@@ -207,15 +193,11 @@ ul .link:hover, .link:focus {
 }
 .card-desc {
     padding: 32px 0;
+    text-align: center;
 }
 .card {
     background-color: #fff;
     width: calc((100% - 72px) / 4);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -226,26 +208,15 @@ ul .link:hover, .link:focus {
 
 /* -------------------------------Portgolio------------------ */
 
-.portfolio-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .app-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
     row-gap: 48px;
     column-gap: 24px;
 }
 .app {
     width: calc((100% - 48px) / 3);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 }
 .app-desc {
     padding: 32px 16px;
@@ -292,6 +263,11 @@ ul .link:hover, .link:focus {
 }
 .footer-logo {
     color: #f4f4fd;
+}
+.footer-container a {
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .text {
     line-height: 1.5;
