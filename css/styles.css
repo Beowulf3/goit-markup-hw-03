@@ -262,15 +262,14 @@ ul .link:hover, .link:focus {
 .footer-container a {
     display: inline-block;
     margin-bottom: 16px;
-}
-.footer-logo {
-    color: #f4f4fd;
-}
-.footer-container a {
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
 }
+.footer-logo {
+    color: #f4f4fd;
+}
+
 .text {
     line-height: 1.5;
     max-width: 264px;
